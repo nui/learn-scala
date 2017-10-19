@@ -1,6 +1,8 @@
 package example
 
 import fibonacci.Fibonacci
+import models.Animal
+import models.Bird
 
 object Hello extends Greeting with App {
   println(greeting)
@@ -8,6 +10,8 @@ object Hello extends Greeting with App {
   tryFor()
   def twice(f:Int=>Int) = f compose f
   println(twice(_+3)(7))
+  val b: Animal = new Bird()
+  b.eat()
 }
 
 case class Weekday(name: String, index: Int)
