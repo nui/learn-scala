@@ -1,17 +1,10 @@
 package example
 
-import fibonacci.Fibonacci
-import models.Animal
-import models.Bird
+import learn.{currying, classes}
 
 object Hello extends Greeting with App {
-  println(greeting)
-  println(Fibonacci.fib(10))
-  tryFor()
-  def twice(f:Int=>Int) = f compose f
-  println(twice(_+3)(7))
-  val b: Animal = new Bird()
-  b.eat()
+  classes.run()
+  currying.run()
 }
 
 case class Weekday(name: String, index: Int)

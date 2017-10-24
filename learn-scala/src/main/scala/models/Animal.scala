@@ -1,7 +1,7 @@
 package models
 
 trait Animal {
-  def eat(): Unit
-
-  println("Animal")
+  def eat(): Unit = {
+    println("Animal eat")
+  }
 }
