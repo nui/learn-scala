@@ -1,10 +1,11 @@
 package example
 
-import learn.{currying, classes}
+import learn.{Implicit, classes, currying}
 
 object Hello extends Greeting with App {
-  classes.run()
-  currying.run()
+//  classes.run()
+//  currying.run()
+  Implicit.run()
 }
 
 case class Weekday(name: String, index: Int)
