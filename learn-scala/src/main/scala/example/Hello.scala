@@ -5,7 +5,8 @@ object Hello extends Greeting with App {
 //  classes.run()
 //  currying.run()
 //  Implicit.run()
-  learn.future.run()
+//  learn.future.run()
+  learn.enumeration.run()
 }
 
 case class Weekday(name: String, index: Int)
